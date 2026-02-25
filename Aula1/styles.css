@@ -1,0 +1,60 @@
+/* Styles para Exemplo1.html — visual moderno e responsivo */
+:root{
+  --bg:#f3f6fb;
+  --card:#ffffff;
+  --muted:#556170;
+  --accent:#0b63ff;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  background:var(--bg);
+  color:#102030;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  padding:32px 16px;
+}
+.container{
+  max-width:900px;
+  margin:0 auto;
+  display:grid;
+  gap:18px;
+  align-content:start;
+}
+.profile{
+  display:flex;
+  gap:18px;
+  align-items:center;
+}
+.avatar{
+  width:120px;
+  height:120px;
+  border-radius:50%;
+  object-fit:cover;
+  box-shadow:0 8px 24px rgba(16,32,48,0.08);
+  border:4px solid #fff;
+  background:linear-gradient(135deg,#eef7ff,#ffffff);
+}
+.profile-info h1{margin:0;font-size:1.7rem}
+.tagline{color:var(--muted);margin:6px 0}
+blockquote{margin:8px 0 0;padding-left:12px;border-left:4px solid #dfeeff;color:#274060;font-style:italic}
+
+.card{
+  background:var(--card);
+  padding:16px;
+  border-radius:12px;
+  box-shadow:0 8px 30px rgba(16,32,48,0.05);
+}
+.card h2{margin:0 0 8px 0;border-bottom:1px solid #f0f6ff;padding-bottom:8px}
+.personal,.skills{list-style:none;padding:0;margin:0}
+.personal li,.skills li{padding:8px 0;border-bottom:1px dashed #f2f6fb}
+.job h3{margin:0 0 6px 0;font-size:1rem}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+
+@media (max-width:700px){
+  .profile{gap:12px}
+  .avatar{width:96px;height:96px}
+  .container{padding:12px}
+}
