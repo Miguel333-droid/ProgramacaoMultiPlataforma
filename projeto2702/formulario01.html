@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 01</title>
+</head>
+
+<body>
+
+    <form action="teste.jsp" method="post">
+        <h1>Cadastro Funcionário</h1>
+        <label for="codFunc">Código Funcionário:</label>
+        <input type="number" name="codFunc" id="codFunc" placeholder="1" min="0"><br>
+
+        <label for="nome">Nome do Funcionário:</label>
+        <input type="text" name="nome" id="nome" placeholder="Digite seu nome"><br>
+
+        <label for="salario">Salário:</label>
+        <input type="number" name="salario" id="salario" placeholder="Digite o Salário" min="0"><br><br>
+
+
+        <h1>Escolha Função</h1>
+
+        <input type="radio" name="funcao" id="sec">
+        <label for="sec">Secretário(a)</label><br>
+
+        <input type="radio" name="funcao" id="mot">
+        <label for="mot">Motorista</label><br>
+
+        <input type="radio" name="funcao" id="rad">
+        <label for="rad">Radialista</label><br><br>
+
+        <h1>Tipos de Projetos Envolvido Dentro da Empresa</h1>
+        <input type="checkbox" name="proj1" id="proj1">
+        <label for="proj1">Projeto "Aprender"</label><br>
+
+        <input type="checkbox" name="proj2" id="proj2">
+        <label for="proj2">Projeto "Vida em Sociedade"</label><br>
+
+        <input type="checkbox" name="proj3" id="proj3">
+        <label for="proj3">Projeto "Cantare"</label><br>
+
+        <input type="color"><br>
+        <input type="date"><br>
+        <input type="datetime-local"><br>
+        <input type="email"><br>
+        <input type="file"><br>
+        <input type="image"><br>
+        <input type="month"><br>
+        <input type="range"><br>
+        <input type="search"><br>
+        <input type="reset">
+
+
+
+
+        <input type="submit" value="Salvar">
+    </form>
+
+
+</body>
+
+</html>
