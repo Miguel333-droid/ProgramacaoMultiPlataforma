@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo JS - JavaScript</title>
+
+    <style>
+        .sumido{
+            display: none;
+        }
+    </style>
+
+</head>
+<body>
+
+<script>
+function esconderTexto(){
+    document.getElementById('sumir').style.display = 'none';
+}
+
+function aparecerTexto(){
+    document.getElementById('sumir').style.display = '';
+}
+
+function controleTexto(){
+    document.getElementById("sumira").classList.toggle("sumido");
+}
+</script>
+
+<p id="palavra">Texto Inicial</p>
+<h1 id="sumir">IRÁ SUMIR</h1>
+<h2 id="sumira">Esse texto vai sumir e aparecer</h2>
+
+<button onclick="document.getElementById('palavra').innerHTML =
+'<b>Texto Novo</b>';">Processar 1</button>
+
+<button onclick="esconderTexto()">Processar 2</button>
+
+<button onclick="aparecerTexto()">Processar 3</button>
+
+<button onclick="controleTexto()">Sumir/Desaparecer</button>
+
+</body>
+</html>
