@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora com Menu</title>
+</head>
+
+<body>
+
+   <style>
+    button {
+        color: white;
+        background: linear-gradient(45deg, #ff0000, #ff6600);
+        border: none;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+
+    button:hover {
+        background: linear-gradient(45deg, #cc0000, #cc5200);
+        transform: scale(1.05);
+    }
+
+    button:active {
+        transform: scale(0.95);
+        box-shadow: 0 2px 3px rgba(0,0,0,0.3);
+    }
+</style>
+
+    <table border="1">
+        <tr>
+            <td>
+
+            <h2>Escolha uma opção:</h2>
+
+            <select id="opcao">
+                <option value="1">1 - Raiz Quadrada</option>
+                <option value="2">2 - Exponenciação</option>
+                <option value="3">3 - Função (a² + √(a + b))</option>
+                <option value="4">4 - Sair</option>
+            </select>
+
+            <br><br>
+
+            <button onclick="executar()">Executar</button>
+
+            <p id="resultado"></p>
+            </td>
+        </tr>
+    </table>
+
+    <script>
+        function executar() {
+            let opcao = document.getElementById("opcao").value;
+            let resultado = "";
+
+            switch (opcao) {
+                case "1":
+                    let num = parseFloat(prompt("Digite um número:"));
+                    resultado = "Resultado: " + Math.sqrt(num);
+                    break;
+
+                case "2":
+                    let base = parseFloat(prompt("Digite a base:"));
+                    let expoente = parseFloat(prompt("Digite o expoente:"));
+                    resultado = "Resultado: " + Math.pow(base, expoente);
+                    break;
+
+                case "3":
+                    let a = parseFloat(prompt("Digite o valor de a:"));
+                    let b = parseFloat(prompt("Digite o valor de b:"));
+                    resultado = "Resultado: " + ((a * a) + Math.sqrt(a + b));
+                    break;
+
+                case "4":
+                    resultado = "Programa encerrado.";
+                    break;
+
+                default:
+                    resultado = "Opção inválida!";
+            }
+
+            document.getElementById("resultado").innerText = resultado;
+        }
+    </script>
+
+</body>
+    
+</html>

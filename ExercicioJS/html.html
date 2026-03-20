@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculadora com Menu</title>
+</head>
+<body>
+
+  <h2>Reinicia a Página</h2>
+
+  <script>
+    function iniciarCalculadora() {
+      let opcao = prompt(
+        "Escolha uma opção:\n" +
+        "1 - Raiz Quadrada\n" +
+        "2 - Exponenciação\n" +
+        "3 - Função (a² + √(a + b))\n" +
+        "4 - Sair"
+      );
+
+      switch(opcao) {
+        case "1":
+          let num = parseFloat(prompt("Digite um número:"));
+          alert("Resultado: " + Math.sqrt(num));
+          break;
+
+        case "2":
+          let base = parseFloat(prompt("Digite a base:"));
+          let expoente = parseFloat(prompt("Digite o expoente:"));
+          alert("Resultado: " + Math.pow(base, expoente));
+          break;
+
+        case "3":
+          let a = parseFloat(prompt("Digite o valor de a:"));
+          let b = parseFloat(prompt("Digite o valor de b:"));
+          let resultado = (a * a) + Math.sqrt(a + b);
+          alert("Resultado: " + resultado);
+          break;
+
+        case "4":
+          alert("Saindo...");
+          return;
+
+        default:
+          alert("Opção inválida!");
+      }
+    }
+
+    iniciarCalculadora();
+  </script>
+ 
+
+</body>
+</html>

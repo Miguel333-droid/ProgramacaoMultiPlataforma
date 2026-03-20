@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+
+  
+</head>
+
+<body>
+
+    <h1 align="center">Escolha na tabela abaixo</h1>
+
+    <table border="1" align="center">
+        <tr>
+            <th>1</th>
+            <th>Cálculo da Raiz Quadrada de Um Número</th>
+        </tr>
+
+        <tr>
+            <th>2</th>
+            <th>Exponenciação de 2 números</th>
+        </tr>
+
+        <tr>
+            <th>3</th>
+            <th>Cálculo da função | a² + √(a + b) |</th>
+        </tr>
+
+        <tr>
+            <th>4</th>
+            <th>Sair</th>
+        </tr>
+
+        <tr>
+            <th colspan="2">
+                Digite uma opção:
+                <input type="number" id="opcao" min="1" max="4">
+            </th>
+        </tr>
+
+        <tr>
+            <th colspan="2">
+                <button onclick="calcular()">Calcular</button>
+            </th>
+        </tr>
+    </table>
+
+    <script>
+        function calcular() {
+            let opcao = document.getElementById("opcao").value;
+            let resultado = "";
+
+            switch (opcao) {
+                case "1":
+                    let num = parseFloat(prompt("Digite um número:"));
+                    resultado = "Resultado: " + Math.sqrt(num);
+                    break;
+
+                case "2":
+                    let base = parseFloat(prompt("Digite a base:"));
+                    let expoente = parseFloat(prompt("Digite o expoente:"));
+                    resultado = "Resultado: " + Math.pow(base, expoente);
+                    break;
+
+                case "3":
+                    let a = parseFloat(prompt("Digite o valor de a:"));
+                    let b = parseFloat(prompt("Digite o valor de b:"));
+                    resultado = "Resultado: " + ((a * a) + Math.sqrt(a + b));
+                    break;
+
+                case "4":
+                    resultado = "Programa encerrado.";
+                    break;
+
+                default:
+                    resultado = "Opção inválida!";
+            }
+
+            alert(resultado);
+        }
+    </script>
+
+</body>
+</html>

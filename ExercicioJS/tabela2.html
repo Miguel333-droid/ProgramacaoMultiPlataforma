@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculadora</title>
+</head>
+<body>
+
+<h1>Escolha uma operação</h1>
+
+<select id="opcao" onchange="mostrarCampos()">
+    <option value="">--Selecione--</option>
+    <option value="1">Raiz Quadrada</option>
+    <option value="2">Exponenciação</option>
+    <option value="3">a² + √(a + b)</option>
+</select>
+
+<div id="inputs"></div>
+
+<button onclick="calcular()">Calcular</button>
+
+<p id="resultado"></p>
+
+<script>
+function mostrarCampos() {
+    const opcao = document.getElementById("opcao").value;
+    const div = document.getElementById("inputs");
+    div.innerHTML = "";
+
+    if(opcao === "1") {
+        div.innerHTML = 'Número: <input type="number" id="num">';
+    } else if(opcao === "2") {
+        div.innerHTML = 'Base: <input type="number" id="base"><br>Expoente: <input type="number" id="expoente">';
+    } else if(opcao === "3") {
+        div.innerHTML = 'A: <input type="number" id="a"><br>B: <input type="number" id="b">';
+    }
+}
+
+function calcular() {
+    const opcao = document.getElementById("opcao").value;
+    let resultado = "";
+
+    if(opcao === "1") {
+        const num = parseFloat(document.getElementById("num").value);
+        resultado = "Resultado: " + Math.sqrt(num);
+    } else if(opcao === "2") {
+        const base = parseFloat(document.getElementById("base").value);
+        const expoente = parseFloat(document.getElementById("expoente").value);
+        resultado = "Resultado: " + Math.pow(base, expoente);
+    } else if(opcao === "3") {
+        const a = parseFloat(document.getElementById("a").value);
+        const b = parseFloat(document.getElementById("b").value);
+        resultado = "Resultado: " + ((a*a) + Math.sqrt(a+b));
+    } else {
+        resultado = "Escolha uma opção primeiro!";
+    }
+
+    document.getElementById("resultado").innerText = resultado;
+}
+</script>
+
+</body>
+</html>
