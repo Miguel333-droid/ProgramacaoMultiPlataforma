@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <title>Formulário ENEM</title>
+  <meta charset="UTF-8">
+  <title>Prova ENEM Simplificada</title>
 </head>
 <body>
 
@@ -10,177 +10,207 @@
 
 <form>
 
-    <h3>1º Dados Pessoais</h3>
+  <!-- BIOLOGIA -->
+  <h3>Biologia</h3>
+  <p>1) A fotossíntese ocorre em qual organela?</p>
+  <input type="radio" name="bio1" value="mitocondria"> Mitocôndria<br>
+  <input type="radio" name="bio1" value="cloroplasto"> Cloroplasto<br>
+  <input type="radio" name="bio1" value="ribossomo"> Ribossomo<br><br>
 
-    Nome: <input type="text" name="nome"><br><br>
-    Data de Nascimento: <input type="date" name="data_nascimento"><br><br>
-    Idade: <input type="text" name="idade"><br><br>
-    Telefone: <input type="text" name="telefone"><br><br>
-    CPF: <input type="text" name="cpf"><br><br>
-    Email: <input type="email" name="email"><br><br>
-    <label for="es">Escolha a Escola que estudou:</label>
-     <select name="es" id="es">
-        <optgroup label="Pública">
-            <option value="Eletro">Eletro</option>
-            <option value="Industrial">Industrial</option>
-        </optgroup>
+  <p>2) O DNA é responsável por:</p>
+  <input type="radio" name="bio2" value="respiracao"> Respiração<br>
+  <input type="radio" name="bio2" value="informacao"> Informação genética<br>
+  <input type="radio" name="bio2" value="digestao"> Digestão<br><br>
 
-        <optgroup label="Particular">
-            <option value="Funvic">Funvic</option>
-            <option value="Ipê">Ipê</option>
-        </optgroup>
-     </select>
+  <p>3) São exemplos de vertebrados:</p>
+  <input type="checkbox" name="bio3" value="cachorro"> Cachorro<br>
+  <input type="checkbox" name="bio3" value="cobra"> Cobra<br>
+  <input type="checkbox" name="bio3" value="minhoca"> Minhoca<br><br>
 
-<form>
+  <p>4) A célula é:</p>
+  <input type="radio" name="bio4" value="celula"> Unidade básica da vida<br>
+  <input type="radio" name="bio4" value="orgao"> Um órgão<br>
+  <input type="radio" name="bio4" value="tecido"> Um tecido<br><br>
 
+  <p>5) Fazem parte do sistema respiratório:</p>
+  <input type="checkbox" name="bio5" value="pulmoes"> Pulmões<br>
+  <input type="checkbox" name="bio5" value="traqueia"> Traqueia<br>
+  <input type="checkbox" name="bio5" value="estomago"> Estômago<br><br>
 
-<h3>Biologia</h3>
-
-<p>1) A fotossíntese ocorre em qual organela?</p>
-<input type="radio" name="bio1"> Mitocôndria<br>
-<input type="radio" name="bio1"> Cloroplasto<br>
-<input type="radio" name="bio1"> Ribossomo<br><br>
-
-<p>2) O DNA é responsável por:</p>
-<input type="radio" name="bio2"> Respiração<br>
-<input type="radio" name="bio2"> Informação genética<br>
-<input type="radio" name="bio2"> Digestão<br><br>
-
-<p>3) São exemplos de vertebrados:</p>
-<input type="checkbox" name="bio3"> Cachorro<br>
-<input type="checkbox" name="bio3"> Cobra<br>
-<input type="checkbox" name="bio3"> Minhoca<br><br>
-
-<p>4) A célula é:</p>
-<input type="radio" name="bio4"> Unidade básica da vida<br>
-<input type="radio" name="bio4"> Um órgão<br>
-<input type="radio" name="bio4"> Um tecido<br><br>
-
-<p>5) Fazem parte do sistema respiratório:</p>
-<input type="checkbox" name="bio5"> Pulmões<br>
-<input type="checkbox" name="bio5"> Traqueia<br>
-<input type="checkbox" name="bio5"> Estômago<br><br>
-
-<p>6) Qual animal é pré histórico:</p>
-<label for="animal">Escolha entre os Grupos</label>
- <select name="animal" id="animal">
-    <optgroup label="Terrestres">
+  <p>6) Qual animal é pré-histórico?</p>
+  <select name="animal">
     <option value="gal">Galinha</option>
     <option value="bar">Barata</option>
-  </optgroup>
-  <optgroup label="Marinhos">
     <option value="meg">Megalodonte</option>
     <option value="ba">Baleia</option>
-  </optgroup>
- </select>
- <br><hr>
+  </select>
+  <hr>
 
+  <!-- MATEMÁTICA -->
+  <h3>Matemática</h3>
+  <p>1) Quanto é 8 x 7?</p>
+  <input type="radio" name="mat1" value="54"> 54<br>
+  <input type="radio" name="mat1" value="56"> 56<br>
+  <input type="radio" name="mat1" value="64"> 64<br><br>
 
+  <p>2) A raiz quadrada de 25 é:</p>
+  <input type="radio" name="mat2" value="3"> 3<br>
+  <input type="radio" name="mat2" value="5"> 5<br>
+  <input type="radio" name="mat2" value="7"> 7<br><br>
 
-<h3>Matemática</h3>
+  <p>3) São números pares:</p>
+  <input type="checkbox" name="mat3" value="2"> 2<br>
+  <input type="checkbox" name="mat3" value="5"> 5<br>
+  <input type="checkbox" name="mat3" value="8"> 8<br><br>
 
-<p>1) Quanto é 8 x 7?</p>
-<input type="radio" name="mat1"> 54<br>
-<input type="radio" name="mat1"> 56<br>
-<input type="radio" name="mat1"> 64<br><br>
+  <p>4) 10 + 15 é:</p>
+  <input type="radio" name="mat4" value="20"> 20<br>
+  <input type="radio" name="mat4" value="25"> 25<br>
+  <input type="radio" name="mat4" value="30"> 30<br><br>
 
-<p>2) A raiz quadrada de 25 é:</p>
-<input type="radio" name="mat2"> 3<br>
-<input type="radio" name="mat2"> 5<br>
-<input type="radio" name="mat2"> 7<br><br>
+  <p>5) São múltiplos de 3:</p>
+  <input type="checkbox" name="mat5" value="6"> 6<br>
+  <input type="checkbox" name="mat5" value="9"> 9<br>
+  <input type="checkbox" name="mat5" value="10"> 10<br><br>
 
-<p>3) São números pares:</p>
-<input type="checkbox" name="mat3"> 2<br>
-<input type="checkbox" name="mat3"> 5<br>
-<input type="checkbox" name="mat3"> 8<br><br>
-
-<p>4) 10 + 15 é:</p>
-<input type="radio" name="mat4"> 20<br>
-<input type="radio" name="mat4"> 25<br>
-<input type="radio" name="mat4"> 30<br><br>
-
-<p>5) São múltiplos de 3:</p>
-<input type="checkbox" name="mat5"> 6<br>
-<input type="checkbox" name="mat5"> 9<br>
-<input type="checkbox" name="mat5"> 10<br><br>
-
-<p>6) Represente o número 3 em algarismo:</p>
-<label for="num">Escolha entre os Grupos</label>
- <select name="num" id="num">
-    <optgroup label="Centena">
+  <p>6) Represente o número 3 em algarismo:</p>
+  <select name="num">
     <option value="t">III</option>
     <option value="d">XL</option>
-  </optgroup>
-  <optgroup label="Unidade">
     <option value="f">III</option>
     <option value="s">IV</option>
-  </optgroup>
- </select>
- <br><hr>
+  </select>
+  <hr>
 
+  <!-- PORTUGUÊS -->
+  <h3>Português</h3>
+  <p>1) Substantivo é:</p>
+  <input type="radio" name="port1" value="substantivo"> Palavra que nomeia<br>
+  <input type="radio" name="port1" value="ligacao"> Palavra que liga frases<br>
+  <input type="radio" name="port1" value="acao"> Palavra que indica ação<br><br>
 
+  <p>2) Verbo indica:</p>
+  <input type="radio" name="port2" value="acao"> Ação<br>
+  <input type="radio" name="port2" value="lugar"> Lugar<br>
+  <input type="radio" name="port2" value="cor"> Cor<br><br>
 
-<h3>Português</h3>
+  <p>3) São adjetivos:</p>
+  <input type="checkbox" name="port3" value="bonito"> Bonito<br>
+  <input type="checkbox" name="port3" value="azul"> Azul<br>
+  <input type="checkbox" name="port3" value="correr"> Correr<br><br>
 
-<p>1) Substantivo é:</p>
-<input type="radio" name="port1"> Palavra que nomeia<br>
-<input type="radio" name="port1"> Palavra que liga frases<br>
-<input type="radio" name="port1"> Palavra que indica ação<br><br>
+  <p>4) O sujeito é:</p>
+  <input type="radio" name="port4" value="quem"> Quem pratica a ação<br>
+  <input type="radio" name="port4" value="verbo"> O verbo<br>
+  <input type="radio" name="port4" value="tempo"> O tempo verbal<br><br>
 
-<p>2) Verbo indica:</p>
-<input type="radio" name="port2"> Ação<br>
-<input type="radio" name="port2"> Lugar<br>
-<input type="radio" name="port2"> Cor<br><br>
+  <p>5) São pronomes:</p>
+  <input type="checkbox" name="port5" value="ele"> Ele<br>
+  <input type="checkbox" name="port5" value="nos"> Nós<br>
+  <input type="checkbox" name="port5" value="casa"> Casa<br><br>
+  <hr>
 
-<p>3) São adjetivos:</p>
-<input type="checkbox" name="port3"> Bonito<br>
-<input type="checkbox" name="port3"> Azul<br>
-<input type="checkbox" name="port3"> Correr<br><br>
+  <!-- HISTÓRIA -->
+  <h3>História</h3>
+  <p>1) O Brasil foi colonizado por:</p>
+  <input type="radio" name="hist1" value="espanha"> Espanha<br>
+  <input type="radio" name="hist1" value="portugal"> Portugal<br>
+  <input type="radio" name="hist1" value="franca"> França<br><br>
 
-<p>4) O sujeito é:</p>
-<input type="radio" name="port4"> Quem pratica a ação<br>
-<input type="radio" name="port4"> O verbo<br>
-<input type="radio" name="port4"> O tempo verbal<br><br>
+  <p>2) A Independência do Brasil ocorreu em:</p>
+  <input type="radio" name="hist2" value="1500"> 1500<br>
+  <input type="radio" name="hist2" value="1822"> 1822<br>
+  <input type="radio" name="hist2" value="1889"> 1889<br><br>
 
-<p>5) São pronomes:</p>
-<input type="checkbox" name="port5"> Ele<br>
-<input type="checkbox" name="port5"> Nós<br>
-<input type="checkbox" name="port5"> Casa<br><br><hr>
+  <p>3) Foram presidentes do Brasil:</p>
+  <input type="checkbox" name="hist3" value="getulio"> Getúlio Vargas<br>
+  <input type="checkbox" name="hist3" value="dompedro"> Dom Pedro II<br>
+  <input type="checkbox" name="hist3" value="juscelino"> Juscelino Kubitschek<br><br>
 
+  <p>4) A Revolução Francesa aconteceu em:</p>
+  <input type="radio" name="hist4" value="1789"> 1789<br>
+  <input type="radio" name="hist4" value="1888"> 1888<br>
+  <input type="radio" name="hist4" value="1964"> 1964<br><br>
 
+  <p>5) São períodos da história:</p>
+  <input type="checkbox" name="hist5" value="media"> Idade Média<br>
+  <input type="checkbox" name="hist5" value="moderna"> Idade Moderna<br>
+  <input type="checkbox" name="hist5" value="digital"> Idade Digital<br><br>
 
-<h3>História</h3>
-
-<p>1) O Brasil foi colonizado por:</p>
-<input type="radio" name="hist1"> Espanha<br>
-<input type="radio" name="hist1"> Portugal<br>
-<input type="radio" name="hist1"> França<br><br>
-
-<p>2) A Independência do Brasil ocorreu em:</p>
-<input type="radio" name="hist2"> 1500<br>
-<input type="radio" name="hist2"> 1822<br>
-<input type="radio" name="hist2"> 1889<br><br>
-
-<p>3) Foram presidentes do Brasil:</p>
-<input type="checkbox" name="hist3"> Getúlio Vargas<br>
-<input type="checkbox" name="hist3"> Dom Pedro II<br>
-<input type="checkbox" name="hist3"> Juscelino Kubitschek<br><br>
-
-<p>4) A Revolução Francesa aconteceu em:</p>
-<input type="radio" name="hist4"> 1789<br>
-<input type="radio" name="hist4"> 1888<br>
-<input type="radio" name="hist4"> 1964<br><br>
-
-<p>5) São períodos da história:</p>
-<input type="checkbox" name="hist5"> Idade Média<br>
-<input type="checkbox" name="hist5"> Idade Moderna<br>
-<input type="checkbox" name="hist5"> Idade Digital<br><br>
-
-<br>
-<input type="submit" value="Enviar">
-<input type="reset" value="Limpar">
+  <button type="button" onclick="corrigir()">Corrigir</button>
+  <input type="reset" value="Limpar">
 
 </form>
+
+<div id="resultado"></div>
+
+<script>
+function corrigir() {
+  let nota = 0;
+  let resultado = "";
+
+  function verificar(name, correta, peso, label) {
+    let inputs = document.getElementsByName(name);
+    let resposta;
+
+    if (inputs[0].type === "checkbox") {
+      // Checkbox: várias respostas
+      let selecionados = [];
+      for (let i = 0; i < inputs.length; i++) {
+        if (inputs[i].checked) selecionados.push(inputs[i].value);
+      }
+      resposta = selecionados.join(",");
+    } else {
+      // Radio ou select
+      for (let i = 0; i < inputs.length; i++) {
+        if (inputs[i].checked || inputs[i].selected) {
+          resposta = inputs[i].value;
+        }
+      }
+    }
+
+    if (resposta === correta) {
+      nota += peso;
+      resultado += label + ": ✅<br>";
+    } else {
+      resultado += label + ": ❌<br>";
+    }
+  }
+
+  // BIOLOGIA (peso 2)
+  verificar("bio1", "cloroplasto", 2, "Bio 1");
+  verificar("bio2", "informacao", 2, "Bio 2");
+  verificar("bio3", "cachorro,cobra", 2, "Bio 3");
+  verificar("bio4", "celula", 2, "Bio 4");
+  verificar("bio5", "pulmoes,traqueia", 2, "Bio 5");
+  verificar("animal", "meg", 2, "Bio 6");
+
+  // MATEMÁTICA (peso 3)
+  verificar("mat1", "56", 3, "Mat 1");
+  verificar("mat2", "5", 3, "Mat 2");
+  verificar("mat3", "2,8", 3, "Mat 3");
+  verificar("mat4", "25", 3, "Mat 4");
+  verificar("mat5", "6,9", 3, "Mat 5");
+  verificar("num", "t", 3, "Mat 6");
+
+  // PORTUGUÊS (peso 3)
+  verificar("port1", "substantivo", 3, "Port 1");
+  verificar("port2", "acao", 3, "Port 2");
+  verificar("port3", "bonito,azul", 3, "Port 3");
+  verificar("port4", "quem", 3, "Port 4");
+  verificar("port5", "ele,nos", 3, "Port 5");
+
+  // HISTÓRIA (peso 2)
+  verificar("hist1", "portugal", 2, "Hist 1");
+  verificar("hist2", "1822", 2, "Hist 2");
+  verificar("hist3", "getulio,juscelino", 2, "Hist 3");
+  verificar("hist4", "1789", 2, "Hist 4");
+  verificar("hist5", "media,moderna", 2, "Hist 5");
+
+  document.getElementById("resultado").innerHTML =
+    resultado + "<br><strong>Nota final: " + nota + "</strong>";
+}
+</script>
 
 </body>
 </html>

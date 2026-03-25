@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<p id="person"></p>
+
+<script>
+    function Pessoa(){
+        const person = [{fname:"Miguel", lname:"Mariano", age:19},
+         {fname:"Joao",lname:"Geraldo", age:19}];
+
+        let text = "";
+        for(let x in person){
+            text += person[x].fname + " ";
+        }
+
+        document.getElementById("person").innerHTML = text;
+        console.log(text);
+    }
+</script>
+
+<button onclick="Pessoa()">Clica</button>
+
+<h1 onclick="Pessoa()">Clica</h1>
+
+</body>
+</html>
